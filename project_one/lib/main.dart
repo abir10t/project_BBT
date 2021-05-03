@@ -58,41 +58,6 @@ class HomePage extends StatelessWidget {
                         SizedBox(
                           height: 10,
                         ),
-                        Container(
-                          child: BottomNavigationBar(
-
-                            items: [
-                              BottomNavigationBarItem(
-                                icon: Icon(
-                                  Icons.home,
-                                  color: Colors.pinkAccent,
-                                ),
-                                title: Text('service'),
-                              ),
-                              BottomNavigationBarItem(
-                                icon: Icon(
-                                  Icons.accessible,
-                                  color: Colors.pinkAccent,
-                                ),
-                                title: Text('Application'),
-                              ),
-                              BottomNavigationBarItem(
-                                icon: Icon(
-                                  Icons.history,
-                                  color: Colors.pinkAccent,
-                                ),
-                                title: Text('History'),
-                              ),
-                              BottomNavigationBarItem(
-                                icon: Icon(
-                                  Icons.pregnant_woman,
-                                  color: Colors.pinkAccent,
-                                ),
-                                title: Text('Profile'),
-                              ),
-                            ],
-                          ),
-                        ),
                       ],
                     ),
                   )
@@ -132,74 +97,74 @@ class HomePage extends StatelessWidget {
                         children: [
                           Expanded(
                               child: Row(
-                                children: [
-                                  Container(
-                                    height: 50,
-                                    width: 50,
-                                    decoration: BoxDecoration(
-                                        borderRadius:
+                            children: [
+                              Container(
+                                height: 50,
+                                width: 50,
+                                decoration: BoxDecoration(
+                                    borderRadius:
                                         BorderRadius.all(Radius.circular(50)),
-                                        border: Border.all(
-                                            color: Colors.grey.withOpacity(0.5),
-                                            width: 2)),
-                                    child: Center(
-                                      child: Icon(
-                                        Icons.shopping_cart_outlined,
-                                        color: Colors.pinkAccent,
-                                      ),
-                                    ),
+                                    border: Border.all(
+                                        color: Colors.grey.withOpacity(0.5),
+                                        width: 2)),
+                                child: Center(
+                                  child: Icon(
+                                    Icons.shopping_cart_outlined,
+                                    color: Colors.pinkAccent,
                                   ),
-                                  SizedBox(
-                                    width: 10,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Cart',
+                                    style: TextStyle(fontSize: 16),
                                   ),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        'Cart',
-                                        style: TextStyle(fontSize: 16),
-                                      ),
-                                      Text('\$ 00.00 ')
-                                    ],
-                                  )
+                                  Text('\$ 00.00 ')
                                 ],
-                              )),
+                              )
+                            ],
+                          )),
                           Expanded(
                               child: Row(
-                                children: [
-                                  Container(
-                                    height: 50,
-                                    width: 50,
-                                    decoration: BoxDecoration(
-                                        borderRadius:
+                            children: [
+                              Container(
+                                height: 50,
+                                width: 50,
+                                decoration: BoxDecoration(
+                                    borderRadius:
                                         BorderRadius.all(Radius.circular(50)),
-                                        border: Border.all(
-                                            color: Colors.grey.withOpacity(0.5),
-                                            width: 2)),
-                                    child: Center(
-                                      child: Icon(
-                                        Icons.calendar_today_outlined,
-                                        color: Colors.pinkAccent,
-                                      ),
-                                    ),
+                                    border: Border.all(
+                                        color: Colors.grey.withOpacity(0.5),
+                                        width: 2)),
+                                child: Center(
+                                  child: Icon(
+                                    Icons.calendar_today_outlined,
+                                    color: Colors.pinkAccent,
                                   ),
-                                  SizedBox(
-                                    width: 10,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Appointments',
+                                    style: TextStyle(fontSize: 16),
                                   ),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Text(
-                                        'Appointments',
-                                        style: TextStyle(fontSize: 16),
-                                      ),
-                                      Text('9+')
-                                    ],
-                                  )
+                                  Text('9+')
                                 ],
-                              )),
+                              )
+                            ],
+                          )),
                         ],
                       ),
                     ),
@@ -209,6 +174,22 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Business',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.school),
+            label: 'School',
+          ),
+        ],
       ),
     );
   }
