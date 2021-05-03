@@ -95,6 +95,8 @@ class BuildApp extends StatelessWidget {
                             Container(
                               height: 50,
                               width: 50,
+
+
                               decoration: BoxDecoration(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(50)),
@@ -202,8 +204,9 @@ class CustomWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 20),
-      //height: 200,
+      padding: EdgeInsets.symmetric( vertical: 10),
+      margin: EdgeInsets.symmetric( horizontal: 8),
+
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,

@@ -176,17 +176,21 @@ class HomePage extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
+        items:[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home,color:Colors.pinkAccent),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
+            icon: Icon(Icons.business,color:Colors.pinkAccent),
             label: 'Business',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
+            icon: Icon(Icons.school,color:Colors.pinkAccent),
+            label: 'School',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.accessible,color:Colors.pinkAccent),
             label: 'School',
           ),
         ],
