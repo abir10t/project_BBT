@@ -90,42 +90,41 @@ class BuildApp extends StatelessWidget {
                           ],
                         )),
                         Expanded(
-                            child: Row(
-                          children: [
-                            Container(
-                              height: 50,
-                              width: 50,
-
-
-                              decoration: BoxDecoration(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(50)),
-                                  border: Border.all(
-                                      color: Colors.grey.withOpacity(0.5),
-                                      width: 2)),
-                              child: Center(
-                                child: Icon(
-                                  Icons.calendar_today_outlined,
-                                  color: Colors.pinkAccent,
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 50,
+                                width: 50,
+                                decoration: BoxDecoration(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(50)),
+                                    border: Border.all(
+                                        color: Colors.grey.withOpacity(0.5),
+                                        width: 2)),
+                                child: Center(
+                                  child: Icon(
+                                    Icons.calendar_today_outlined,
+                                    color: Colors.pinkAccent,
+                                  ),
                                 ),
                               ),
-                            ),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  'Appointments',
-                                  style: TextStyle(fontSize: 16),
-                                ),
-                                Text('9+')
-                              ],
-                            )
-                          ],
-                        )),
+                              SizedBox(
+                                width: 10,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Appointments',
+                                    style: TextStyle(fontSize: 16),
+                                  ),
+                                  Text('9+')
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -173,19 +172,19 @@ class BuildApp extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home,color:Colors.pinkAccent),
+            icon: Icon(Icons.home, color: Colors.pinkAccent),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business, color:Colors.pinkAccent),
+            icon: Icon(Icons.business, color: Colors.pinkAccent),
             label: 'Business',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school, color:Colors.pinkAccent),
+            icon: Icon(Icons.school, color: Colors.pinkAccent),
             label: 'School',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.accessible, color:Colors.pinkAccent),
+            icon: Icon(Icons.accessible, color: Colors.pinkAccent),
             label: 'School',
           ),
         ],
@@ -204,9 +203,8 @@ class CustomWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric( vertical: 10),
-      margin: EdgeInsets.symmetric( horizontal: 8),
-
+      padding: EdgeInsets.symmetric(vertical: 100),
+      margin: EdgeInsets.symmetric(horizontal: 12),
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,
